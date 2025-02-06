@@ -1,0 +1,21 @@
+body {
+    font-family: "Epilogue", serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+h2,a,p {
+    margin: 0;
+    padding: 0;
+}
+
+.register-input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F3F3F3;
+    padding: 21px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
