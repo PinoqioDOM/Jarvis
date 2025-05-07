@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="d-flex  vh-100 flex-md-row flex-column">
+    <div class="col-md-4 col-12 p-4 bg-light" id="userform">
+      <form id="form">
+        <h2 class="mb-3">Hi Challenger</h2>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="title" required>
+            <label for="title">Title</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="duedate" name="dueDate" required>
+          <label for="dueDate" class="form-label">Due Date</label>
+        </div>
+
+        <div class="dropdown form-floating mb-3 ">
+          <select class="form-select" id="levelbtn" required>
+            <option value="">Choose level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <label for="levelbtn">Level</label>
+      </div>
+
+        <button class="btn btn-outline-primary col-12 py-3" id="submit">Add Task</button>
+      </form>
+    </div>
+
+    <div class="bg-secondary col-md-8 col-12 p-4">
+      <h2 class="mb-3">Your Tasks</h2>
+
+      <div id="task-list" class="d-flex flex-wrap gap-3">
+
+
+
+
+
+
+      </div>
+
+    </div>  
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
