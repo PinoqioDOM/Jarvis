@@ -6,12 +6,11 @@ const taskList = document.getElementById('task-list')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
-    const level = levelBtn.value
 
     const task = {
         title: title.value,
         date: date.value,
-        level
+        level: level.value
     }
 
     addTasks(task)
