@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.web-background {
+    background-color: hsl(227, 75%, 14%);
+    padding: 40px 80px;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.theme-btn {
+    padding: 20px 10px;
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.fa-sun {
+    display: none;
+}
+
+.fa-moon {
+    display: block;
+}
+
+.theme-btn:hover {
+    background-color:gold;
+}
+
+/* nav-bar */
+
+.nav-bar-section {
+    padding: 60px 0px;
+}
+
+.nav-bar-section h1 {
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(227, 75%, 14%);
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.nav-bar button:hover {
+    background-color: limegreen;
+    padding: 10px 30px;
+}
+
+/* card-container */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px 10px whitesmoke;
+}
+
+.card-info {
+    display: flex;
+    gap: 10px;
+}
+
+.card h3 {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.card p {
+    margin-top: 5px;
+    color: gainsboro;
+}
+
+.card button {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: hsl(227, 75%, 14%);
+    font-weight: bolder;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: hsl(227, 75%, 14%);
+        padding: 30px 50px;
+        box-sizing: border-box;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

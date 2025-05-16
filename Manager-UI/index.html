@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Manager UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="web-background" id="background">
+    <header>
+      <div class="header" id="header">
+        <img src="./assets/images/logo.svg" alt="Web-Logo" />
+
+        <button class="theme-btn" id="theme-toggle">
+          <i class="fa-solid fa-sun fa-2xl"></i>
+          <i class="fa-solid fa-moon fa-2xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="nav-bar-section">
+      <div class="flex">
+        <h1>Extension List</h1>
+
+        <div class="nav-bar">
+          <button id="all-btn">All</button>
+          <button id="active-btn">Active</button>
+          <button id="inactive-btn">Inactive</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-devlens.svg" alt="Devlens Logo" />
+            <div class="card-description">
+              <h3>Devlens</h3>
+              <p>Quickly inspect page layouts and visualize element boundaries</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy Logo" />
+            <div class="card-description">
+              <h3>StyleSpy</h3>
+              <p>Instantly analyze and copy CSS from any webpage element</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost Logo" />
+            <div class="card-description">
+              <h3>SpeedBoost</h3>
+              <p>Optimizes browser resource usage to accelerate page loading</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard Logo" />
+            <div class="card-description">
+              <h3>JSONWizard</h3>
+              <p>Formats, validates and prettifies JSON response in-browser</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro Logo" />
+            <div class="card-description">
+              <h3>TabMaster Pro</h3>
+              <p>Organizes browser tabs into groups and sessions</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewPortBuddy Logo" />
+            <div class="card-description">
+              <h3>ViewPortBuddy</h3>
+              <p>Simulates various screen resolutions directly within the browser</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes Logo" />
+            <div class="card-description">
+              <h3>Markup Notes</h3>
+              <p>Enable annotation and notes directly into webpages for collaborative debugging</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides Logo" />
+            <div class="card-description">
+              <h3>GridGuides</h3>
+              <p>Overlay customizable grids and alignment guides on any webpage</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-palette-picker.svg" alt="Palette Picker Logo" />
+            <div class="card-description">
+              <h3>Palette Picker</h3>
+              <p>Instantly extracts color palettes from any webpage</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker Logo" />
+            <div class="card-description">
+              <h3>LinkChecker</h3>
+              <p>Scans and highlights broken links on any page</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot Logo" />
+            <div class="card-description">
+              <h3>DOM Snapshot</h3>
+              <p>Capture and export DOM structures quickly</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+          <div class="card-info">
+            <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus Logo" />
+            <div class="card-description">
+              <h3>ConsolePlus</h3>
+              <p>Enhanced developer console with advanced filtering and logging</p>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
