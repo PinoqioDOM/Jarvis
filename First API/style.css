@@ -1,0 +1,18 @@
+.joke-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 50px 100px;
+    border:  1px solid black;
+    border-radius: 10px 10px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+    background-color: cadetblue;
+}
