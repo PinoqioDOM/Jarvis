@@ -22,7 +22,7 @@ const getPostByid = (id) => {
 
 getPostByid(userNum) */
 
-/* const jokeBtn = document.getElementById('jokebtn')
+const jokeBtn = document.getElementById('jokebtn')
 const setup  = document.getElementById('jokeSetup');
 const punchline= document.getElementById('jokePunchline');
 
@@ -38,4 +38,4 @@ jokeBtn.addEventListener('click', () => {
         }).catch(error => {
             console.log('Error:', error);
         })
-}) */
+})
