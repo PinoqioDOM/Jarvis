@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rate-box {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+}
+
+.star {
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.rate-box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rate-box-info h2 {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.container p {
+    color: hsl(217, 12%, 63%);
+    max-width: 350px;
+}
+
+.rates {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rate-numbers {
+    background-color: darkslategray;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.rate-numbers:hover {
+    background-color: hsl(25, 97%, 53%);
+    border-color: white;
+}
+
+.rate-numbers.active {
+    background-color: hsl(25, 97%, 53%);
+    border-color: white;
+    color: white;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Thnks box */
+
+.thanks-box{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    display: none;
+}
+
+.thanks-btn {
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(25, 97%, 53%);
+    font-weight: bold;
+}
+
+.thanks-box h2 {
+    color: white;
+}
+
+.thanks-box p {
+    color: hsl(217, 12%, 63%);
+    max-width: 350px;
+    text-align: center;
+    line-height: 25px;
+}
